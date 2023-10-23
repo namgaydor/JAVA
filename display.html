@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Possibilities</title>
+</head>
+<body>
+    <!-- using innerHTML property-->
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').innerHTML="javascript";
+    </script>
+
+    <!-- using document.write() method-->
+    <script>
+        document.write('<h3>Autum<h3>');
+        document.write('Its getting cold.')
+    </script>
+
+    <button type="button" onclick="document.write('Boom!')">Click Me</button>
+
+    <!-- window.alert() method-->
+    <script>
+        alert('This in an alert box!')
+    </script>
+    <button type="button" onclick="alert('This is another alert')">Display Alert</button>
+
+    <!-- console.log() method -->
+    <script>
+        console.log('I am a log message')
+    </script>
+</body>
+</html>
