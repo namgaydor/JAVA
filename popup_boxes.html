@@ -1,0 +1,46 @@
+<!-- 2.popup_boxes.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Boxes</title>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <button type="button" class="btn btn-outline-primary m-5 p-2" onclick="alertbox()">Alert</button>
+    <button type="button" class="btn btn-outline-primary m-5 p-2" onclick="promptbox()">Prompt</button>
+    <button type="button" class="btn btn-outline-primary m-5 p-2" onclick="confirmbox()">Confirm</button>
+</head>
+<body>
+    <script>
+        function alertbox(){
+            alert('This is an alert message! Click OK to continue.')
+        }
+
+        function promptbox(){
+            let person = prompt("Please enter your name")
+            let text;
+            if (person == null || person == ""){
+                text = "User cancelled the prompt.";
+            }
+            else {
+                text = "Hello" + person + "! How are you today?";
+
+            }
+            document.getElementById('demo1').innerHTML = text;
+        }
+
+        function confirmbox(){
+            if (confirm("Press a button")){
+                message = "You pressed OK on confirm";
+            }
+            else {
+                message = "You pressed Cancle on confirm";
+
+            }
+            document.getElementById('demo1').innerHTML = message;
+        }
+    </script>
+</body>
+</html>
