@@ -1,0 +1,68 @@
+<!-- full form validation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/form_validation.css">
+</head>
+<body>
+    <div class="container">
+        <h3 class="centered">Registration Form</h3>
+        <form name="registrationForm" action="#" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="uname">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" name="mail">
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" class="form-control" id="age" name="age">
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Favourite Color:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="color" id="red" value="Red">
+                    <label class="form-check-label" for="red">Red</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="color" id="blue" value="Blue">
+                    <label class="form-check-label" for="blue">Blue</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="color" id="green" value="Green">
+                    <label class="form-check-label" for="green">Green</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="season">Favourite Season:</label>
+                <select class="form-control" id="season" name="season">
+                    <option value="">Select Fav season</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Autumn">Autumn</option>
+                    <option value="Winter">Winter</option>
+                    <option value="Spring">Spring</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3" value="register">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
